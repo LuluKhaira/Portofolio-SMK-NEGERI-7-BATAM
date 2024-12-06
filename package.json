@@ -25,6 +25,7 @@
     "@emotion/styled": "^11.13.5",
     "@mui/material": "^6.1.10",
     "aos": "^2.3.4",
+    "firebase": "^11.0.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
