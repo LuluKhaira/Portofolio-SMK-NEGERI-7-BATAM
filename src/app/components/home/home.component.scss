@@ -157,7 +157,7 @@
         font-size: 3rem;
         text-transform: uppercase;
         text-align: center;
-        color: var(--navy);
+        color: var(--warm-yellow);
         font-weight: 700;
         letter-spacing: 2px;
         white-space: normal;
@@ -204,9 +204,9 @@
           text-align: center;
           margin: 20px 10px;
           font-weight: bold;
-          border: 2px solid var(--navy);
+          border: 2px solid var(--warm-yellow);
           background-color: transparent;
-          color: var(--navy);
+          color: var(--warm-yellow);
           height: 55px;
           text-transform: uppercase;
           cursor: pointer;
@@ -255,8 +255,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        border-bottom: 2px solid var(--black);
-        border-right: 2px solid var(--black);
+        border-bottom: 2px solid var(--warm-yellow);
+        border-right: 2px solid var(--warm-yellow);
         opacity: 0;
         animation: scrollAnimate 2s linear infinite;
 
@@ -303,7 +303,7 @@
         text-decoration: none;
         -webkit-writing-mode: vertical-rl;
         writing-mode: vertical-rl;
-        color: var(--navy);
+        color: var(--warm-yellow);
         transition: var(--transition);
         opacity: 0;
         animation: var(--slideRight);
@@ -320,7 +320,7 @@
         width: 2px;
         height: 150px;
         margin: 0px auto;
-        background-color: var(--navy);
+        background-color: var(--warm-yellow);
         opacity: 0;
         animation: var(--slideLeft);
         animation-delay: 1.5s;
