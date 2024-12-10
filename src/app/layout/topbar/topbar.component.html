@@ -2,31 +2,31 @@
   <div class="headerContainer">
     <mat-toolbar class="header">
       <div class="headerLogo">
-        <div
-          class="home-img"
-          data-aos="flip-down"
-          data-aos-easing="ease-in"
-          data-aos-duration="1000"
-          data-aos-delay="300"
-        >
-          <div class="img-circle">
-            <span></span>
-            <span></span>
-            <div class="image">
-              <img src="../../../assets/img/SMK7.png" alt="" />
-            </div>
-          </div>
-        </div>
         <p class="navTitle">SMK NEGERI 7 BATAM</p>
       </div>
 
       <span class="spacer"></span>
+
       <div class="navItems" *ngIf="!isMobile">
         <ul>
-          <li><a style="--i: 1" href="#home" (click)="setActive('home')">Home</a></li>
-          <li><a style="--i: 1" href="#profile" (click)="setActive('profile')">Profile</a></li>
+          <li><a href="#home" (click)="setActive('home')">Home</a></li>
+          <li class="dropdown profile-dropdown">
+            <a
+              href="javascript:void(0)"
+              (click)="toggleProfileDropdown()"
+              [class.active]="isProfileDropdownOpen"
+            >
+              Profile
+            </a>
+            <ul class="dropdown-content" *ngIf="isProfileDropdownOpen">
+              <li><a href="#profile">View Profile</a></li>
+              <li><a href="#settings">Settings</a></li>
+              <li><a href="#logout">Logout</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
+
       <div
         id="humMenu"
         (click)="toggleSidenav()"
