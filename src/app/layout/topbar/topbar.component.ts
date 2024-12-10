@@ -17,6 +17,7 @@ import { Subscription } from 'rxjs';
 export class TopbarComponent {
   isMenuOpen: boolean = false;
   isMobile: boolean = false;
+  isProfileDropdownOpen: boolean = false; // New property for the profile dropdown
 
   @ViewChild('indicator') indicator!: ElementRef;
 
@@ -28,7 +29,7 @@ export class TopbarComponent {
     private observer: BreakpointObserver,
     private renderer: Renderer2,
     private el: ElementRef
-  ) {}
+  ) { }
 
   ngAfterViewInit() {
     this.subscription = this.observer
@@ -49,6 +50,10 @@ export class TopbarComponent {
     this.renderer.addClass(activeLink, 'active');
   };
 
+  toggleProfileDropdown = () => {
+    this.isProfileDropdownOpen = !this.isProfileDropdownOpen;
+  };
+
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }
@@ -60,3 +65,4 @@ export class TopbarComponent {
     this.sidenavToggle.emit();
   };
 }
+

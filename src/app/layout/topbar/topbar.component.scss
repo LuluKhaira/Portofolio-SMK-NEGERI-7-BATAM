@@ -52,6 +52,7 @@
                 filter: blur(10px);
               }
             }
+
             .image {
               position: relative;
               width: 60px;
@@ -114,7 +115,7 @@
         justify-content: center;
         cursor: pointer;
         opacity: 0;
-        animation:  var(--slideTop);
+        animation: var(--slideTop);
 
         span {
           display: block;
@@ -147,10 +148,12 @@
             &:nth-of-type(1) {
               transform: translate(0, 0) rotate(-45deg);
             }
+
             &:nth-of-type(2) {
               width: 20px;
               transform: translate(11px, -2px) rotate(45deg);
             }
+
             &:nth-of-type(3) {
               width: 20px;
               transform: translate(-10px, -6px) rotate(45deg);
@@ -195,7 +198,7 @@
               position: relative;
               transition: var(--transition);
               opacity: 0;
-              animation:  var(--slideTop);
+              animation: var(--slideTop);
               animation-delay: calc(0.3s * var(--i));
 
             }
@@ -226,7 +229,7 @@
             //   transform: scaleY(0.7) scaleX(0.9);
             // }
 
-             a:hover {
+            a:hover {
               color: var(--white);
             }
           }
@@ -243,4 +246,3 @@
     margin: 0 -20px 0 20px;
   }
 }
-
