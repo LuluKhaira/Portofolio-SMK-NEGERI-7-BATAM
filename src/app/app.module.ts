@@ -21,6 +21,7 @@ import {
   RippleGlobalOptions,
 } from '@angular/material/core';
 import { ContactComponent } from './components/contact/contact.component';
+import { SejarahComponent } from './layout/sejarah/sejarah.component';
 
 const globalRippleConfig: RippleGlobalOptions = {
   disabled: false,
@@ -44,7 +45,8 @@ const globalRippleConfig: RippleGlobalOptions = {
     ConfirmationComponent,
     ResumeComponent,
     ProjectItemsComponent,
-    ContactComponent
+    ContactComponent,
+    SejarahComponent
   ],
   imports: [
     BrowserModule,
